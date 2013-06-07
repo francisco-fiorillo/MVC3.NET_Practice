@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
-using MVC3_TestApplication.Models;
+using Mvc3_Scaffolding.Models;
 
-namespace MVC3_TestApplication.Controllers
+namespace Mvc3_Scaffolding.Controllers
 {
     public class AccountController : Controller
     {

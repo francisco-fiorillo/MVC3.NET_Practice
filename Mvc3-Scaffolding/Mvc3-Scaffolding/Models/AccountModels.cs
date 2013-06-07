@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace MVC3_TestApplication.Models
+namespace Mvc3_Scaffolding.Models
 {
 
     public class ChangePasswordModel

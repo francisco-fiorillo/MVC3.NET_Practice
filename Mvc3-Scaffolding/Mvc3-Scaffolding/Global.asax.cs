@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Data.Entity;
 
-namespace MVC3_TestApplication
+namespace Mvc3_Scaffolding
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
@@ -31,8 +32,10 @@ namespace MVC3_TestApplication
 
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
+            //This re-creates database every time the application is restarted (FOR TEST ONLY)
+            Database.SetInitializer(new Mvc3_Scaffolding.dbClasses.MusicStoreDbInitializer());
 
+            AreaRegistration.RegisterAllAreas();
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
         }

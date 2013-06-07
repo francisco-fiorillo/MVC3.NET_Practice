@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MVC3_TestApplication.Controllers
+namespace Mvc3_Scaffolding.Controllers
 {
     public class HomeController : Controller
     {
