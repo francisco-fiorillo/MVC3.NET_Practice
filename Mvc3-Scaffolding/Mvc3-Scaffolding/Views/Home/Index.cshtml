@@ -4,5 +4,9 @@
 
 <h2>@ViewBag.Message</h2>
 <p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+    Search Form
 </p>
+<form action="/Home/Search" method="get">
+    <input type="text" name="q" />
+    <input type="submit" value="Search now!" />
+</form>

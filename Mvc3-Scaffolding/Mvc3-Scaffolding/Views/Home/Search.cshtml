@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Mvc3_Scaffolding.Models.Album>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<div>
+    <h2>Results:</h2>
+    <table>
+    <thead>
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Artist.Name</td>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </tbody>
+    </table>
+</div>
