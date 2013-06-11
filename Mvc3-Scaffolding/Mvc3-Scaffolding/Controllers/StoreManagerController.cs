@@ -67,6 +67,8 @@ namespace Mvc3_Scaffolding.Controllers
             Album album = db.Albums.Find(id);
             ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
             ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
+            ModelState.AddModelError("Title", "Title error detected...");
+            ModelState.AddModelError("", "BOOM! this is a disaster!");
             return View(album);
         }
 
